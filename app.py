@@ -10,7 +10,7 @@ import numpy as np
 
 # Memuat model dan scaler
 package = joblib.load(
-    "deployment_model/clustering_deployment.joblib"
+    "clustering_deployment.joblib"
 )
 
 model = package["model"]
@@ -31,7 +31,7 @@ frequency = st.number_input(
 )
 
 monetary = st.number_input(
-    "Monetary (rupiah)", min_value=1, value=2500000
+    "Monetary (£)", min_value=1, value=4310
 )
 
 # Tombol prediksi
